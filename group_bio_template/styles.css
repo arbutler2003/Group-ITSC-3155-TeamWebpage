@@ -1,6 +1,6 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -12,12 +12,22 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
 }
 
 /* Styling for team logo image */
 .team-logo {
     width: 150px; /* Adjust the size as needed */
     margin-top: 10px;
+    border-radius: 75%;
+}
+
+/* Styling for team member photos */
+.team-member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Menu button styling */
@@ -26,7 +36,7 @@ header nav {
 }
 
 header nav button {
-    background: #007BFF;
+    background: #e0c10f;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -36,7 +46,7 @@ header nav button {
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: #8e7b0e;
 }
 
 /* Flex container for team bios and vision sections */
@@ -50,7 +60,7 @@ header nav button:hover {
 
 /* Card styling for individual team bios */
 .card {
-    background: white;
+    background: rgb(244, 244, 244);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -77,7 +87,7 @@ h2 {
 
 /* Button styling */
 button {
-    background: #007BFF;
+    background: #e0c10f;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -86,5 +96,80 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #8e7b0e;
+}
+
+
+/* === Aiden’s Moodboard Section === */
+.aiden-container {
+    width: 85%;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.aiden-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aiden-intro {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.aiden-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aiden-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.aiden-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.aiden-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.aiden-card h3 {
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.aiden-card p {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 12px;
+}
+
+.aiden-link {
+    text-decoration: none;
+    color: #e0c10f;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.aiden-link:hover {
+    color: #8e7b0e;
 }

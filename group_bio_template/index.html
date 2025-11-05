@@ -11,7 +11,7 @@
 <header>
     <h1>Meet Our Team</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="webpage_images/team_logo.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -29,24 +29,100 @@
         <button onclick="toggleBio('bio1')">Show Bio</button>
         <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
     </div>
+
     <div class="card">
         <h2>Jane Smith</h2>
         <p>Backend Developer</p>
         <button onclick="toggleBio('bio2')">Show Bio</button>
         <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
     </div>
+
     <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
+        <img src="webpage_images/aiden_profile_picture.jpg" alt="Aiden Butler" class="team-member-photo">
+        <h2>Aiden Butler</h2>
+        <p>Backend Developer</p>
         <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+        <div id="bio3" class="bio">
+            <p>Aiden is a backend developer with a passion for creating technology solutions to health problems.</p>
+
+            <!-- Aiden’s Moodboard -->
+            <div class="aiden-container">
+                <h3 class="aiden-title">Aiden’s Computer Science Moodboard</h3>
+                <p class="aiden-intro">
+                    A showcase of my favorite tools and learning resources for computer science.
+                </p>
+
+                <div class="aiden-grid">
+                    <!-- BroCode -->
+                    <div class="aiden-card">
+                        <img src="webpage_images/mood_board_images/aiden/brocode.jpg" alt="BroCode" class="aiden-img">
+                        <h4>BroCode</h4>
+                        <p>My favorite YouTube channel for fun, coding breakdowns.</p>
+                        <a href="https://www.youtube.com/@BroCodez" target="_blank" class="aiden-link">Visit BroCode</a>
+                    </div>
+
+                    <!-- W3Schools -->
+                    <div class="aiden-card">
+                        <img src="webpage_images/mood_board_images/aiden/w3schools.jpg" alt="W3Schools" class="aiden-img">
+                        <h4>W3Schools</h4>
+                        <p>Great for written breakdowns of concepts and quizzes.</p>
+                        <a href="https://www.w3schools.com" target="_blank" class="aiden-link">Visit W3Schools</a>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="aiden-card">
+                        <img src="webpage_images/mood_board_images/aiden/github.png" alt="GitHub" class="aiden-img">
+                        <h4>GitHub</h4>
+                        <p>Great for showcasing work and exploring other projects.</p>
+                        <a href="https://github.com/" target="_blank" class="aiden-link">Visit GitHub</a>
+                    </div>
+
+                    <!-- Gemini -->
+                    <div class="aiden-card">
+                        <img src="webpage_images/mood_board_images/aiden/gemini.jpg" alt="Gemini AI" class="aiden-img">
+                        <h4>Gemini</h4>
+                        <p>Helpful for talking through concepts and quick references.</p>
+                        <a href="https://gemini.google.com" target="_blank" class="aiden-link">Visit Gemini</a>
+                    </div>
+
+                    <!-- NeetCode -->
+                    <div class="aiden-card">
+                        <img src="webpage_images/mood_board_images/aiden/neetcode.png" alt="NeetCode 150" class="aiden-img">
+                        <h4>NeetCode 150</h4>
+                        <p>My go-to for brushing up on DSA concepts.</p>
+                        <a href="https://neetcode.io" target="_blank" class="aiden-link">Visit NeetCode 150</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+
+    <!-- Left side: mission statement -->
+    <div style="flex: 1; margin-right: 40px;">
+        <h2>Our Team Mission</h2>
+        <p>
+            We're a group of students aspiring to be computer scientists. This project is among the many steps in our journey to becoming
+            professionals in the field. Our mission is to collaborate effectively, learn from each other, and create the best project this course has seen.
+        </p>
+    </div>
+
+    <!-- Right side: team rules -->
+    <div style="flex: 1; background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        <h3>Our Team Rules</h3>
+        <ul style="list-style-type: disc; text-align: left; line-height: 1.6;">
+            <li>Keep communication open and honest.</li>
+            <li>Use internal deadlines prior to the assigned due date.</li>
+            <li>"Done" means the work meets requirements and is properly documented.</li>
+            <li>Split tasks fairly, help when needed.</li>
+            <li>Respect everyone’s time and ideas.</li>
+            <li>Have fun, we’re all learning.</li>
+        </ul>
+    </div>
+</div>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->
