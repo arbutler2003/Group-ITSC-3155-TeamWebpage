@@ -173,3 +173,16 @@ button:hover {
 .aiden-link:hover {
     color: #8e7b0e;
 }
+/* Layout for team cards in the bios section */
+#bios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Each team member card */
+#bios .card {
+    flex: 1 1 260px;  /* allows them to share space evenly */
+    max-width: 280px; /* limits size so 2–3 can fit per row */
+}
